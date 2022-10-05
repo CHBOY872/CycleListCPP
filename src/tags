@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+CYCLELIST_HPP_SENTRY	CycleList/CycleList.hpp	/^#define CYCLELIST_HPP_SENTRY /;"	d
+CycleList	CycleList/CycleList.cpp	/^CycleList::CycleList() : first(0), last(0), len(0) {}$/;"	f	class:CycleList
+CycleList	CycleList/CycleList.hpp	/^class CycleList {$/;"	c
+CycleListCursor	CycleList/CycleList.hpp	/^	CycleListCursor(CycleList* _the_master, CycleList::item** _itm)$/;"	f	class:CycleListCursor
+CycleListCursor	CycleList/CycleList.hpp	/^class CycleListCursor {$/;"	c
+GetLen	CycleList/CycleList.hpp	/^	int GetLen() { return len; }$/;"	f	class:CycleList	typeref:typename:int
+InsertTo	CycleList/CycleList.cpp	/^void CycleList::InsertTo(CycleListCursor *a, int val)$/;"	f	class:CycleList	typeref:typename:void
+Iterate	CycleList/CycleList.hpp	/^	Iterator* Iterate() { return new Iterator(this, &first, &last); }$/;"	f	class:CycleList	typeref:typename:Iterator *
+Iterate	CycleList/CycleList.hpp	/^	Iterator* Iterate(int) { return new Iterator(this, &last, &first); }$/;"	f	class:CycleList	typeref:typename:Iterator *
+Iterator	CycleList/CycleList.hpp	/^		Iterator(CycleList *_the_master, $/;"	f	class:CycleList::Iterator
+Iterator	CycleList/CycleList.hpp	/^	class Iterator {$/;"	c	class:CycleList
+More	CycleList/CycleList.cpp	/^bool CycleList::Iterator::More() { return end; }$/;"	f	class:CycleList::Iterator	typeref:typename:bool
+Next	CycleList/CycleList.cpp	/^CycleListCursor CycleList::Iterator::Next()$/;"	f	class:CycleList::Iterator	typeref:typename:CycleListCursor
+Pop	CycleList/CycleList.cpp	/^void CycleList::Pop()$/;"	f	class:CycleList	typeref:typename:void
+Prev	CycleList/CycleList.cpp	/^CycleListCursor CycleList::Iterator::Prev()$/;"	f	class:CycleList::Iterator	typeref:typename:CycleListCursor
+Push	CycleList/CycleList.cpp	/^void CycleList::Push(int val)$/;"	f	class:CycleList	typeref:typename:void
+RemoveAt	CycleList/CycleList.cpp	/^void CycleList::RemoveAt(CycleListCursor *a)$/;"	f	class:CycleList	typeref:typename:void
+end	CycleList/CycleList.hpp	/^		bool end;$/;"	m	class:CycleList::Iterator	typeref:typename:bool
+first	CycleList/CycleList.hpp	/^		CycleList::item **first;$/;"	m	class:CycleList::Iterator	typeref:typename:CycleList::item **
+first	CycleList/CycleList.hpp	/^	item *first;$/;"	m	class:CycleList	typeref:typename:item *
+item	CycleList/CycleList.hpp	/^	struct item {$/;"	s	class:CycleList
+itm	CycleList/CycleList.hpp	/^	CycleList::item** itm;$/;"	m	class:CycleListCursor	typeref:typename:CycleList::item **
+last	CycleList/CycleList.hpp	/^		CycleList::item **last;$/;"	m	class:CycleList::Iterator	typeref:typename:CycleList::item **
+last	CycleList/CycleList.hpp	/^	item *last;$/;"	m	class:CycleList	typeref:typename:item *
+len	CycleList/CycleList.hpp	/^	int len;$/;"	m	class:CycleList	typeref:typename:int
+main	main.cpp	/^int main() $/;"	f	typeref:typename:int
+next	CycleList/CycleList.hpp	/^		item* next;$/;"	m	struct:CycleList::item	typeref:typename:item *
+operator &	CycleList/CycleList.hpp	/^	CycleListCursor* operator&() { return this; }$/;"	f	class:CycleListCursor	typeref:typename:CycleListCursor *
+operator =	CycleList/CycleList.hpp	/^	CycleListCursor& operator=(const int &a)$/;"	f	class:CycleListCursor	typeref:typename:CycleListCursor &
+operator []	CycleList/CycleList.cpp	/^CycleListCursor CycleList::operator[](int idx)$/;"	f	class:CycleList	typeref:typename:CycleListCursor
+prev	CycleList/CycleList.hpp	/^		item* prev;$/;"	m	struct:CycleList::item	typeref:typename:item *
+the_master	CycleList/CycleList.hpp	/^		CycleList *the_master;$/;"	m	class:CycleList::Iterator	typeref:typename:CycleList *
+the_master	CycleList/CycleList.hpp	/^	CycleList* the_master;$/;"	m	class:CycleListCursor	typeref:typename:CycleList *
+val	CycleList/CycleList.hpp	/^		int val;$/;"	m	struct:CycleList::item	typeref:typename:int
+~CycleList	CycleList/CycleList.cpp	/^CycleList::~CycleList()$/;"	f	class:CycleList
+~CycleListCursor	CycleList/CycleList.hpp	/^	~CycleListCursor() {}$/;"	f	class:CycleListCursor
+~Iterator	CycleList/CycleList.hpp	/^		~Iterator() {}$/;"	f	class:CycleList::Iterator
